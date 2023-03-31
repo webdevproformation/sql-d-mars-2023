@@ -68,3 +68,15 @@ CREATE TABLE IF NOT EXISTS articles (
 ) ; 
 
 -- bon appétit !! 13h30 @ toute suite !!!!!!!!!!
+
+
+-- créer une table exo2
+-- contient 6 colonnes 
+-- id chiffre entier qui peut aller jusqu'à 4 Milliards
+-- dt_publication date et heure 
+-- dt_mise_a_jour date
+-- etat stocker 0 1
+-- texte maximum de 65 000 lettres
+-- prix chiffre à virgule 
+
+-- afficher cette table dans SQlite Explorer

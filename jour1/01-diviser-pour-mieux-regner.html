@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Banane</li>
+        <li>Abricot</li>
+    </ul>
+    <ul class="fruits"></ul>
+    <script>
+        // 1ère manière de faire la même chose
+        document.querySelector(".fruits").innerHTML = `<li>Pomme</li>
+                                                        <li>Poire</li>
+                                                        <li>Banane</li>
+                                                        <li>Abricot</li>`;
+
+    </script>
+    <ul class="fruits2"></ul>
+    <script>
+        // 2ème solution
+        const fruits = ["Poire","Banane" , "Abricot" , "Kiwi"];
+        let html = "";
+        for(let fruit of fruits){
+            html += `<li>${fruit}</li>`
+        }
+        document.querySelector(".fruits2").innerHTML = html ; 
+        // abstraction 
+        // tableau => stocker les valeurs
+        // variable stocker le resultat attendu 
+        // concaténation avec une boucle 
+        // injection dans le DOM 
+
+        // quand on a une page complexe à créer => cette méthode que l'on va utiliser
+        
+        // lemonde.fr => page d'accueil 
+        // si je dois la coder en html et css à la main => possible 1 fois 
+        // mais ça devient très fastidieux si je dois la mettre à jour 
+    </script>
+
+    <div></div>
+    <script>
+        // tableau qui contiennent des objets => collection
+        const utilisateurs = [ // 12 valeurs 
+            { id : 1 , nom : "Alain" , dt : "01/01/2022" , isAdmin : true },
+            { id : 2 , nom : "Benoit" , dt : "01/01/2020" , isAdmin : false },
+            { id : 3 , nom : "Céline" , dt : "01/01/2001" , isAdmin : true },
+            { id : 4 , nom : "Denis"  , isAdmin : true },
+        ];
+        // liste de tous les utilisateurs de lemonde.fr 
+        // 100 000 utilisateurs et 60 valeurs dans une ligne 
+        // 6 000 000 valeurs => variables énormes => impossible à gérer à la main 
+
+        // adresse => pour les 100 000 utilisateurs
+        // recherche => quels sont les admins ?? 
+
+        // dès les années 70 => comment stocker une grande quantité de données de manière fiable et sécurisée ?? 
+
+        // séparer les données dans des fichiers dédiés aux données 
+        // programmes qui permettent de manipuler les infos stockées dans ces fichiers 
+
+        // Codd => ingénieur de IBM => propose une méthode pour stocker de manière optimale les données 
+        // https://fr.wikipedia.org/wiki/Edgar_Frank_Codd
+        // éviter d'avoir des données qui se répétent 
+        // éviter de stocker du vide 
+        // éviter les incohérences 
+
+        // Base de données de relationnelles => 
+        // comment représenter des concepts de la vie quotidienne => Entités => Table 
+        // comment manipuler les Tables => SQL 
+        // SQL => Structured Query Langage 
+
+        // né dans les années 70 => SQL est le langage le plus utilisé dans les projets informatiques 
+
+    </script>
+
+</body>
+</html>

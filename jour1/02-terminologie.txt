@@ -1,0 +1,28 @@
+Base de données => ce qui contient TOUTES les données 
+
+Table => ce qui regrouper les données par concept 
+=> etudiants / salle / fruits / ville / réservation / idées 
+
+Table ensemble de COLUMN => étudiant 
+prenom => Type (la nature des informations que l'on va stocker dans le colonne)
+nom => Type ( texte / chiffre / date  )
+age 
+email 
+password 
+dt_creation_profil 
+dt_naissance 
+
+=> table étudiant contient 7 colonnes 
+
+La ligne d'enregistrement / la ligne / les valeurs / nuplet
+
+--------  
+
+pour créer des BASE DE DONNEE / TABLES / COLUMN / LIGNE 
+=> utiliser un logiciel SGBD 
+=> SQlite 
+=> pour communiquer et lui faire des demandes (query) avec SQlite => 
+
+utiliser le langage SQL 
+
+

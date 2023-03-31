@@ -1,0 +1,21 @@
+SQL => Base de données relationnelles 
+
+=> avant j'utilisais SGBD (Système de Gestion de Base de Données) => MySQL 
+installer des logiciels 
+
+=> SQlite (système de gestion de Base de Données )
+
+=> très pratique / ajouter dans Visual Studio une extension 
+
+--------------------------
+
+support : 
+https://formation.webdevpro.net/sql 
+login : sql 
+password : sql 
+
+=> note de cours sur un github 
+
+=> SGBD
+
+01-diviser-pour-mieux-regner.html

@@ -32,3 +32,24 @@ CREATE TABLE IF NOT EXISTS ville_1(
 -- prix chiffre à virgule 
 -- description texte de 65 000 lettres max
 -- dt_creation date et heure par défaut c'est maintenant
+
+
+CREATE TABLE IF NOT EXISTS exo4(
+    id INTEGER PRIMARY KEY AUTOINCREMENT ,
+    tva DECIMAL DEFAULT 1.2 ,
+    prix DECIMAL  ,
+    description TEXT , 
+    dt_creation DATETIME DEFAULT CURRENT_TIMESTAMP
+) ;
+
+CREATE TABLE IF NOT EXISTS a(
+    age INT UNSIGNED  -- les chiffres sont non signés => > 0
+)
+
+-- pause rdv 15 min => 15h00
+
+-- CRUD => les 4 opérations de base sur les Lignes (column / Base de données / Table)
+-- Create => INSERT INTO
+-- Read   => SELECT 
+-- Update => UPDATE
+-- Delete => DELETE 

@@ -37,3 +37,17 @@ WHERE id IN (2, 3) ;
 -- changer la description des lignes 2 et 3 ajouter à la suite  "à compléter"
 -- ligne 2 fleur blanche à compléter
 -- ligne 3 fleur jaune à compléter
+
+UPDATE fleurs
+SET status = FALSE
+WHERE nom = "rose";
+
+UPDATE fleurs
+SET nom = "LILAS", dt_creation = CURRENT_DATE
+WHERE id = 3;
+
+UPDATE fleurs
+SET description = description || " à compléter"
+WHERE id IN(2, 3);
+
+SELECT * FROM fleurs;

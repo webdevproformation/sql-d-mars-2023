@@ -51,3 +51,16 @@ SET description = description || " à compléter"
 WHERE id IN(2, 3);
 
 SELECT * FROM fleurs;
+
+
+---------------------
+
+-- supprimer une ligne
+DELETE FROM fleurs WHERE id = 3 ;
+
+--- supprimer toutes les lignes 
+TRUNCATE TABLE fleurs ; -- MySQL
+
+DELETE FROM fleurs ; -- MySQL et Sqlite
+
+-- Attention ne pas oublier le WHERE dans les requêtes DELETE => sinon ça vide votre table de toutes ses données 

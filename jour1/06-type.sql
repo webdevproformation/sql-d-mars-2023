@@ -80,3 +80,47 @@ CREATE TABLE IF NOT EXISTS articles (
 -- prix chiffre à virgule 
 
 -- afficher cette table dans SQlite Explorer
+
+-- les types dépendent du SGBD utilisé  : 
+-- https://mariadb.com/kb/en/data-types/
+-- https://dev.mysql.com/doc/refman/5.7/en/data-types.html
+
+CREATE TABLE IF NOT EXISTS exo2 (
+id INT ,
+dt_publication DATETIME ,
+dt_mise_a_jour DATE ,
+etat BOOLEAN ,
+texte MEDIUMTEXT ,
+prix DECIMAL
+);
+
+CREATE TABLE IF NOT EXISTS exo2 (
+    id INT /*2^32*/ ,
+    dt_publication DATETIME /*AAAA-MM- HH:MM:SS */,
+    etat BOOLEAN /*0 1*/ ,
+    texte MEDIUMTEXT /*TEXT 2^16*/ ,
+    prix DECIMAL /*DECIMAL (60,2)*/
+) ;
+
+-- si je prends un type ordre de grandeur plus élevé que les données stockées 
+-- stocker la même information => un peu plus de place que si vous prenez des types mieux calibré
+-- si vous prenez trop petit TINYINT au lieu INT (pas SQLite) 
+-- ça ne stocke pas stocker toute l'information (trancher)
+
+-- si vous ne connaissez pas l'ordre de grandeur prenez plus grand dans un premier temps (théoriquement)
+-- dans la réalité, une fois que la table est créée => touche plus à la structure (sauf augmenter le type)
+
+-- MySQL => ALTER TABLE (mais existe pas en SQlite)
+-- sur sqlite / mySQL 
+-- supprimer la table 
+DROP TABLE IF EXISTS exo2 ;
+CREATE TABLE IF NOT EXISTS exo2 (
+    id INT ,
+    dt_publication DATETIME ,
+    dt_mise_a_jour DATE ,
+    etat BOOLEAN ,
+    texte TEXT ,
+    prix DECIMAL 
+) ;
+
+

@@ -64,6 +64,10 @@ INSERT INTO arbres
 VALUES 
 ( 3, "poirier" , CURRENT_DATE ) ;
 
+INSERT INTO arbres
+VALUES 
+( NULL , "cerisier" , CURRENT_DATE ) ;
+
 -- cas pratique 
 -- créer la table exo5
 -- clé primaire
@@ -75,3 +79,18 @@ VALUES
 -- "exo 5" 20.10 maintenant 
 -- "exo 5 suite " 30.40  hier à 22h30 et 2 secondes
 -- "exo5 fin" 20.40 cematin à 11h20 et 30 secondes
+
+CREATE TABLE IF NOT EXISTS exo5(
+     id INTEGER PRIMARY KEY AUTOINCREMENT ,
+     description TEXT ,
+     prix FLOAT DEFAULT 20.10 ,
+     dt_creation DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO exo5
+VALUES 
+(NULL , "exo 5" ,20.10,  CURRENT_TIMESTAMP ),
+(NULL , "exo 5 suite" ,30.40,  "2023-03-30 22:30:02" ),
+(NULL , "exo 5 fin" ,20.40, "2023-03-30 11:20:30"  ) ;
+
+SELECT * FROM exo5 ;

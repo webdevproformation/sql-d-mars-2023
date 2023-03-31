@@ -15,6 +15,8 @@ login : sql
 password : sql 
 
 => note de cours sur un github 
+https://github.com/webdevproformation/sql-d-mars-2023
+
 
 => SGBD
 
